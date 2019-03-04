@@ -1,16 +1,14 @@
 import React, { Component } from 'react'
 import Movie from './components/Movie'
-// import data from './data/movies.json'
 
 class App extends Component {
   state = {
-    moviesdata: [] // data.results
+    moviesdata: []
   }
 
   componentDidMount() {
     fetch(
-      'https://api.themoviedb.org/3/movie/now_playing?api_key=fae89ce6616cd4e865bdfb392495d453'
-    // current movie api key up
+      'https://api.themoviedb.org/3/movie/now_playing?api_key=c7519dda6166314cd0297ca58edc6207'
       )
       .then(resp => resp.json())
       .then(data => {
